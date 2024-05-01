@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIS169IntroToNET", "CIS169IntroToNET.csproj", "{95930234-F0EE-49CE-8B80-34B894C4BCBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08264A31-0668-4B23-B7E8-7FAEB804BEBD}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95930234-F0EE-49CE-8B80-34B894C4BCBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95930234-F0EE-49CE-8B80-34B894C4BCBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95930234-F0EE-49CE-8B80-34B894C4BCBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95930234-F0EE-49CE-8B80-34B894C4BCBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
