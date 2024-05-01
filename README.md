@@ -1,6 +1,6 @@
 # Unit 6 Project 1
 ## Getting Started
-- [Fork this repo](change later)
+- [Fork this repo](https://github.com/sorrymint/CIS169IntoToNET)
 - Clone down to local computer
 ## Running the project
 - Run the program and in the web browser manually change the URL to `localhost:9999/courses`
@@ -46,7 +46,7 @@ Using NuGet
 Add-Migration EndTime
 Update-Database
 ```
-Using .NET CLI
+Using .NET CLI (easiest way)
 ```bash
 dotnet ef migrations add EndTime
 dotnet ef database update
