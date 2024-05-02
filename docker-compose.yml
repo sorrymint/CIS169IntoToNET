@@ -1,0 +1,6 @@
+﻿services:
+  cis169introtonet:
+    image: cis169introtonet
+    build:
+      context: .
+      dockerfile: Dockerfile
