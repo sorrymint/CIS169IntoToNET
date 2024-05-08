@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,7 +8,7 @@ using CIS169IntroToNET.Model;
 
 namespace CIS169IntroToNET.Data
 {
-    public class CIS169IntroToNETContext : DbContext
+    public class CIS169IntroToNETContext : DbContext, IEnumerable
     {
         public CIS169IntroToNETContext (DbContextOptions<CIS169IntroToNETContext> options)
             : base(options)
@@ -15,5 +16,9 @@ namespace CIS169IntroToNET.Data
         }
 
         public DbSet<CIS169IntroToNET.Model.Course> Course { get; set; } = default!;
+        public IEnumerator GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
