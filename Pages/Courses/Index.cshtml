@@ -13,24 +13,28 @@
 </p>
 <table class="table">
     <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Course[0].CourseName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Course[0].CourseDescription)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Course[0].RoomNumber)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Course[0].StartTime)
-            </th>
-            <th></th>
-        </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Course[0].CourseName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Course[0].CourseDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Course[0].RoomNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Course[0].StartTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Course[0].EndTime)
+        </th>
+        <th></th>
+    </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Course) {
+    @foreach (var item in Model.Course)
+    {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.CourseName)
@@ -45,11 +49,14 @@
                 @Html.DisplayFor(modelItem => item.StartTime)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.EndTime)
+            </td>
+            <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
                 <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
-}
+    }
     </tbody>
 </table>
